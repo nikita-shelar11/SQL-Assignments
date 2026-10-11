@@ -1,3 +1,5 @@
+-------------------------------Employee Assigments---------------------------------------
+
 --1.  Write create table syntax for empl table and Incentive table
 
 ---Table empl---
@@ -43,7 +45,7 @@ select * from empl;
 --4.	Get First_Name, Last_Name from empl table
 select first_name, last_name from empl;
 
---5.	Get First_Name from empl table using alias name “empl Name”
+--5.	Get First_Name from empl table using alias name â€œempl Nameâ€
 select first_name  empl_Name from empl;
 
 --6.	Get First_Name from empl table in upper case
@@ -75,13 +77,13 @@ select * from empl order by first_name;
 --14.	Get all empl details from the empl table order by First_Name Ascending and Salary Descending?
 select * from empl order by first_name, salary desc;
 
---15.	Get empl details from empl table whose empl name is “John”
+--15.	Get empl details from empl table whose empl name is â€œJohnâ€
 select * from empl where first_name='Michael';
 
---16.	Get empl details from empl table whose empl name are “John” and “Roy”
+--16.	Get empl details from empl table whose empl name are â€œJohnâ€ and â€œRoyâ€
 select * from empl where first_name in('John', 'Roy');
 
---17.	Get empl details from empl table whose empl name are not “John” and “Roy”.
+--17.	Get empl details from empl table whose empl name are not â€œJohnâ€ and â€œRoyâ€.
 select * from empl where first_name not in('John', 'Roy');
 
 --18.	Get empl details from empl table whose first name starts with 'J'.
@@ -99,13 +101,13 @@ select * from empl where first_name like '____y';
 --22.	Get empl details from empl table whose first name starts with 'J' and name contains 4 letters
 select * from empl where first_name like 'J____';
 
---23.	Get empl details from empl table who’s Salary greater than 600000.
+--23.	Get empl details from empl table whoâ€™s Salary greater than 600000.
 select * from empl where salary>600000;
 
---24.	Get empl details from empl table whose joining year is “2013”.
+--24.	Get empl details from empl table whose joining year is â€œ2013â€.
 select * from empl where extract(year from(joining_date))='2013';
 
---25.	Get empl details from empl table whose joining month is “January”.
+--25.	Get empl details from empl table whose joining month is â€œJanuaryâ€.
 select * from empl where extract(month from(joining_date))=1;
 
 --26.	Get empl details from empl table who joined before January 1st 2013.
